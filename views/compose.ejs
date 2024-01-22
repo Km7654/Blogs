@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+
+    <br>
+    <h1>Compose</h1>
+    
+
+    <form class="formclass" action="/compose" method="post">
+
+        <h3>Title</h3>
+
+        <input type="text" size="148" name="title" required style="padding: 8px; border-radius: 5px;">
+        
+        <br>
+        <h3>Post</h3>
+
+        <textarea name="content" cols="150" rows="10" style="padding: 5px; border-radius: 5px;" required></textarea>
+
+        <button type="submit" style="margin-top: 20px; padding: 7px 10px; background-color: rgb(56, 68, 68); color: aliceblue; font-weight: 600; border: none; border-radius: 5px;" >Publish</button>
+    </form>
+
+    <%- include("partials/footer") -%>
